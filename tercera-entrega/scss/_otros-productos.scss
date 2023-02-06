@@ -1,0 +1,56 @@
+#seccion-otros{
+
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        font-size: $size-titulos;
+        font-family: Fredoka One;
+    }
+
+    p{
+        font-size: $size-parrafo;
+    }
+}
+
+.seccion-otros__imagen{
+    width: 70%;
+    
+    
+    border-radius: 25px;
+
+
+    
+}
+
+
+.cards-otros-productos{
+    img{
+        @include size-imagen(178.4px, 178.4px)
+    }
+}
+
+
+.cards-otros-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+@media (min-width: 768px){
+    .cards-otros-productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    
+    }
+}
+
+@media (min-width: 960px){
+    .cards-otros-productos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    
+    }
+}

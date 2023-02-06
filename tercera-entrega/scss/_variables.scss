@@ -1,0 +1,55 @@
+$color-principal:#c9d2d2;
+$borde-carousel:lightpink;
+$size-titulos: 2rem;
+$size-parrafo: 1.6rem;
+
+
+
+
+
+/*flex-column*/
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    
+
+}
+
+/*flex-row*/
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+    
+
+}
+
+
+
+@mixin hover-li{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    transition:.5s;
+    border-radius: 20px;
+}
+/*mixin para las marcas*/
+@mixin size-imagen($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+    border-radius: 20px;
+}
+
+/*mixin para fotos estilo galerias*/
+
+@mixin galeria{
+    height: 25rem;
+    width: 35rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    cursor: pointer;
+}

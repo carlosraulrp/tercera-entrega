@@ -1,0 +1,40 @@
+.imagen-barra{
+    img{
+        width: 100%;
+        height: 200px;
+        opacity: 0.4; 
+    }
+}
+
+
+.titulo-marcas{
+    font-size:$size-titulos;
+}
+
+.caja-marcas{
+    img{
+        @include size-imagen(30rem, 20rem);
+    }
+}
+
+.caja-marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+@media (min-width: 768px){
+    .caja-marcas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1024px){
+    .caja-marcas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

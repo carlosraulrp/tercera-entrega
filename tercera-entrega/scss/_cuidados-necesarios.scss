@@ -1,0 +1,40 @@
+.imagen-cuidados{
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 50rem;
+    
+}
+
+.accordion-button{
+    font-size: $size-titulos;
+}
+
+
+.accordion{
+    .accordion-item{
+        &:nth-child(even){
+            background-color: pink;
+        }
+    }
+}
+
+
+
+.accordion-body{
+    font-size: $size-parrafo;
+}
+
+.caja-imagen-cuidados{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media(min-width:999px){
+
+    .caja-imagen-cuidados{
+        
+        flex-direction: row;
+        
+    }
+}

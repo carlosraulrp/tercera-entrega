@@ -1,0 +1,18 @@
+.seccion-alimentos{
+    p{
+        font-size: $size-parrafo;
+    }
+
+    li{
+        font-size: 1.4rem;
+    }
+}
+
+
+.caja-alimentos-padre{
+    display: flex;
+    
+    
+    gap: 3rem;
+
+}
